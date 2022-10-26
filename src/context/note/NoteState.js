@@ -3,7 +3,7 @@ import { useState} from "react";
 import React from "react";
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://inotes-server.herokuapp.com/";
   const noteInitial = [];
   const [notes, setNotes] = useState(noteInitial);
 
@@ -22,7 +22,7 @@ const NoteState = (props) => {
   };
 
   const fetchNote = async () => {
-    const response = await fetch('http://localhost:5000/api/notes/fetchnotes', {
+    const response = await fetch(`${host}/api/notes/fetchnotes`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

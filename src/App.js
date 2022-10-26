@@ -29,7 +29,7 @@ function App() {
   const [data , setData] = useState();
 
   const fetchdecodeData = async ()=>{
-    const response = await fetch("http://localhost:5000/api/auth/fetchUser",{
+    const response = await fetch("https://inotes-server.herokuapp.com/api/auth/fetchUser",{
       method : "POST",
       headers : {
         "auth-token" : localStorage.getItem("authtoken")
