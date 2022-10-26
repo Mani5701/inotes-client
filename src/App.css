@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.noteIcon i {
+    cursor: pointer;
+}
+.noteIcon i:hover{
+    color: #0B5ED7;
+}
